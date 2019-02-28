@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/yyy">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="39dp"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:fontFamily="@font/roboto_bold"
+                android:text="New Service Request Form"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/sName"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_below="@+id/heading"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/roundo"
+                android:ems="10"
+                android:fontFamily="@font/roboto_medium"
+                android:hint="Enter Name.."
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_default" />
+
+            <EditText
+                android:id="@+id/sEmail"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/roundo"
+                android:ems="10"
+                android:fontFamily="@font/roboto_medium"
+                android:hint="Enter Email.."
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_default" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="IT service Request:"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="18sp"
+                />
+
+            <RadioGroup
+                android:id="@+id/sRequest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rDebit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_weight="50"
+                    android:buttonTint="@color/common_google_signin_btn_text_dark_default"
+                    android:checked="false"
+                    android:fontFamily="@font/roboto_medium"
+                    android:shadowColor="@color/common_google_signin_btn_text_dark_default"
+                    android:tag="Network"
+                    android:text="Network"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+                <RadioButton
+                    android:id="@+id/rCredit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_weight="50"
+                    android:buttonTint="@color/common_google_signin_btn_text_dark_default"
+                    android:checked="false"
+                    android:fontFamily="@font/roboto_medium"
+                    android:tag="Software"
+                    android:text="Software"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+                <RadioButton
+                    android:id="@+id/rhardware"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="12dp"
+                    android:layout_weight="50"
+                    android:buttonTint="@color/common_google_signin_btn_text_dark_default"
+                    android:checked="false"
+                    android:fontFamily="@font/roboto_medium"
+                    android:tag="Software"
+                    android:text="Hardware"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+                <RadioButton
+                    android:id="@+id/rOther"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="12dp"
+                    android:layout_weight="50"
+                    android:buttonTint="@color/common_google_signin_btn_text_dark_default"
+                    android:checked="false"
+                    android:fontFamily="@font/roboto_medium"
+                    android:tag="Software"
+                    android:text="Other"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/sRequiremrnt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/roundo"
+                android:ems="10"
+                android:fontFamily="@font/roboto_medium"
+                android:hint="Specify your IT service requirements in this IT service request form"
+                android:inputType="textMultiLine|textPersonName"
+                android:maxLines="5"
+                android:minLines="2"
+                android:paddingLeft="5dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_default" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="14dp"
+                android:text="Where are you
+located?"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/slocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rOffice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="50"
+                    android:buttonTint="@color/common_google_signin_btn_text_dark_default"
+                    android:checked="false"
+                    android:tag="Office"
+                    android:text="Office"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+                <RadioButton
+                    android:id="@+id/rHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="50"
+                    android:buttonTint="@color/common_google_signin_btn_text_dark_default"
+                    android:checked="false"
+                    android:tag="Home"
+                    android:text="Home"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/sdept"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+
+                android:layout_margin="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="50"
+                android:background="@drawable/roundo"
+                android:ems="10"
+                android:fontFamily="@font/roboto_medium"
+                android:hint="Department Name"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_default" />
+
+            <EditText
+                android:id="@+id/saddress"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/roundo"
+                android:ems="10"
+                android:fontFamily="@font/roboto_medium"
+                android:hint="Enter complete postal address."
+                android:inputType="textMultiLine|textPersonName"
+                android:maxLines="5"
+                android:minLines="2"
+                android:paddingLeft="5dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_default" />
+
+            <EditText
+
+                android:id="@+id/sAccoumt"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/roundo"
+                android:ems="10"
+                android:fontFamily="@font/roboto_medium"
+
+                android:hint="Acc Type"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_default" />
+
+            <EditText
+                android:id="@+id/sMaccount"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+
+                android:background="@drawable/roundo"
+                android:ems="10"
+                android:fontFamily="@font/roboto_medium"
+
+                android:hint="Master Acc No."
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_default" />
+
+            <EditText
+                android:id="@+id/sinvPer"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+
+                android:background="@drawable/roundo"
+                android:ems="10"
+                android:fontFamily="@font/roboto_medium"
+
+                android:hint="Invoice period"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_default" />
+
+
+            <EditText
+                android:id="@+id/saccNo"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+
+                android:background="@drawable/roundo"
+                android:ems="10"
+                android:fontFamily="@font/roboto_medium"
+
+                android:hint="Ref/ACCOUNT NO"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_default" />
+
+            <EditText
+                android:id="@+id/sVendorAcc"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+
+                android:background="@drawable/roundo"
+                android:ems="10"
+                android:fontFamily="@font/roboto_medium"
+
+                android:hint="Vender Invoice No"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_default" />
+
+            <EditText
+                android:id="@+id/svinvDate"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+
+                android:background="@drawable/roundo"
+                android:ems="10"
+                android:fontFamily="@font/roboto_medium"
+
+                android:hint="Vender Invoice Date"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_default" />
+
+            <EditText
+                android:id="@+id/sinvamtTax"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+
+                android:background="@drawable/roundo"
+                android:ems="10"
+                android:fontFamily="@font/roboto_medium"
+
+                android:hint="Vender Invoice AMT(W/O Tax)"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_default" />
+
+            <EditText
+                android:id="@+id/sinvwtax"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+
+                android:background="@drawable/roundo"
+                android:ems="10"
+                android:fontFamily="@font/roboto_medium"
+
+                android:hint="Vendor Invoice AMT (With TAX)"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_default" />
+
+            <EditText
+                android:id="@+id/scustName"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+
+                android:background="@drawable/roundo"
+                android:ems="10"
+                android:fontFamily="@font/roboto_medium"
+
+                android:hint="Cust Name"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_default" />
+
+            <EditText
+                android:id="@+id/spono"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+
+                android:background="@drawable/roundo"
+                android:ems="10"
+                android:fontFamily="@font/roboto_medium"
+
+                android:hint="PO NO"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_default" />
+
+            <EditText
+                android:id="@+id/spoEnd"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+
+                android:background="@drawable/roundo"
+                android:ems="10"
+                android:fontFamily="@font/roboto_medium"
+
+                android:hint="PO END Date"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_default" />
+
+            <EditText
+                android:id="@+id/sPoAmt"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+
+                android:layout_centerHorizontal="true"
+
+                android:background="@drawable/roundo"
+                android:ems="10"
+                android:fontFamily="@font/roboto_medium"
+
+                android:hint="PO AMOUNT"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_default" />
+
+            <EditText
+                android:id="@+id/sinvNo"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+
+                android:background="@drawable/roundo"
+                android:ems="10"
+                android:fontFamily="@font/roboto_medium"
+
+                android:hint="INVOICE NO"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_default" />
+
+            <EditText
+                android:id="@+id/sinvwoAmount"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+
+                android:background="@drawable/roundo"
+                android:ems="10"
+                android:fontFamily="@font/roboto_medium"
+
+                android:hint="Without Tax Amount"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_default" />
+
+            <EditText
+                android:id="@+id/sinvAmount"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+
+                android:background="@drawable/roundo"
+                android:ems="10"
+                android:fontFamily="@font/roboto_medium"
+
+                android:hint="Invoice Amount"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_default" />
+
+            <EditText
+                android:id="@+id/sDisc"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+
+                android:background="@drawable/roundo"
+                android:ems="10"
+                android:fontFamily="@font/roboto_medium"
+
+                android:hint="DISC"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_default" />
+
+            <EditText
+                android:id="@+id/sCustpmt"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+
+                android:background="@drawable/roundo"
+                android:ems="10"
+                android:fontFamily="@font/roboto_medium"
+
+                android:hint="Cust PMT RECD"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_default" />
+
+            <EditText
+                android:id="@+id/sPmtRel"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+
+                android:background="@drawable/roundo"
+                android:ems="10"
+                android:fontFamily="@font/roboto_medium"
+
+                android:hint="Vendor PMT Release"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_default" />
+
+            <EditText
+                android:id="@+id/spmtDue"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+
+                android:background="@drawable/roundo"
+                android:ems="10"
+                android:fontFamily="@font/roboto_medium"
+
+                android:hint="V Payment due date"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_default" />
+
+            <EditText
+                android:id="@+id/sVPayReq"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+
+                android:background="@drawable/roundo"
+                android:ems="10"
+                android:fontFamily="@font/roboto_medium"
+
+                android:hint="V PAY REQ SEND"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_default" />
+
+            <EditText
+                android:id="@+id/vPayRef"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+
+                android:background="@drawable/roundo"
+                android:ems="10"
+                android:fontFamily="@font/roboto_medium"
+
+                android:hint="V Payment refence No"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_default" />
+
+            <EditText
+                android:id="@+id/sremark"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+
+                android:background="@drawable/roundo"
+                android:ems="10"
+                android:fontFamily="@font/roboto_medium"
+
+                android:hint="REMARk"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_default" />
+
+            <EditText
+                android:id="@+id/sWbsElem"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+
+                android:background="@drawable/roundo"
+                android:ems="10"
+                android:fontFamily="@font/roboto_medium"
+
+                android:hint=" WBS Element"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_default" />
+
+            <EditText
+                android:id="@+id/sCustPoDes"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+
+                android:background="@drawable/roundo"
+                android:ems="10"
+                android:fontFamily="@font/roboto_medium"
+
+                android:hint="Customer PO Description"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_default" />
+
+
+            <EditText
+                android:id="@+id/site"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+
+                android:background="@drawable/roundo"
+                android:ems="10"
+                android:fontFamily="@font/roboto_medium"
+
+                android:hint="Site"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_default" />
+
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:theme="@style/Widget.AppCompat.Button" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
